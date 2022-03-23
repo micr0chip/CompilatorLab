@@ -1,41 +1,25 @@
+<!DOCTYPE HTML>
 <html>
-<head>
-    <title> Info of application</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <style>
-        menu {
-         font: 14pt serif;
-        }
-       </style>
-</head>
-<body>
-<p><strong> File </strong></p>
-    <menu>
-        <li> Create - создаёт новый текстовый файл</li>
-
-        <li>Open - открывает текстовый файл</li>
-
-        <li>Save - сохраняет текстовый файл</li>
-
-        <li>Save as - сохранить текстовый файл в определенном формате</li>
-
-        <li> Exit - выход из приложения</li>
-    </menu>
-<p><strong>Edit</strong></p>
-    <menu>
-        <li> Undo - отменить последнее изменение </li>
-
-        <li> Redo - отменить отменённое изменение </li>
-
-        <li> Cut - вырезать выделенный текст в буфер обмена </li>
-
-        <li> Copy - копировать выделенный текст в буфер обмена </li>
-
-        <li> Paste - вставить текст из буфера обмена </li>
-
-        <li> Delete - удалить выделенный текст </li>
-
-        <li> SelectAll - выделить весь текст </li>
-    </menu>
-</body>
+    <head>
+        <meta charset="utf-8">   
+        <title> Справка </title>
+		 <style>
+         .fig {
+         text-align: center; 
+         }
+		 </style>
+    </head>
+    <body>
+        <h2 align="center">Лабораторная работа №3 "Лексический анализатор(сканер)"</h2>
+        <p><font size="4"><strong>Цель работы</strong>: Изучить назначение лексического анализатора. Спроектировать алгоритм и выполнить программную реализацию сканера.<br>В соответствии с заданным вариантом задания:</font></p>
+		<ol>
+           <li><font size="4">Спроектировать диаграмму состояний сканера.</font></a></li>
+		   <li><font size="4">Разработать лексический анализатор, позволяющий выделить в тексте лексемы, иные символы считать недопустимыми (выводить ошибку)</font></a></li>
+        </ol>
+        <p><font size="4">Вариант 10 "Объявление переменных в Java":<br>Ключевые слова: int, long, short, boolean, double, string, true, false;<br>Идентификатор (letter {letter | digit});<br>Пробельные символы, оператор присваивания (=), конец оператора (;), конец строки (\n);<br>Строка, ЦБЗ (digit {digit}) и вещественное число (digit{digit}[“.”{digit} digit].);<br>Недопустимый символ</font></p>
+        <p class="fig"><img src="pic1.png" width="707" height="1061"></p>
+		<p align="center"><font size="4">Спроектированный лексический автомат</p>
+		<p class="fig"><img src="pic2.png" width="982" height="467"></p>
+		<p align="center"><font size="4">Тестовые данные</p>
+  </body>
 </html>
