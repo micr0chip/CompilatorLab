@@ -1,0 +1,33 @@
+C:\Users\rnas1\Desktop\Компилятор\obj\Debug\Compilator.csproj.AssemblyReference.cache
+C:\Users\rnas1\Desktop\Компилятор\obj\Debug\Compilator.csproj.SuggestedBindingRedirects.cache
+C:\Users\rnas1\Desktop\Компилятор\obj\Debug\WindowsFormsApp4.Form1.resources
+C:\Users\rnas1\Desktop\Компилятор\obj\Debug\WindowsFormsApp4.Form2.resources
+C:\Users\rnas1\Desktop\Компилятор\obj\Debug\WindowsFormsApp4.Form3.resources
+C:\Users\rnas1\Desktop\Компилятор\obj\Debug\WindowsFormsApp4.Properties.Resources.resources
+C:\Users\rnas1\Desktop\Компилятор\obj\Debug\Compilator.csproj.GenerateResource.cache
+C:\Users\rnas1\Desktop\Компилятор\obj\Debug\Compilator.csproj.CoreCompileInputs.cache
+C:\Users\rnas1\Desktop\Компилятор\obj\Debug\WindowsFormsApp4.exe
+C:\Users\rnas1\Desktop\Компилятор\obj\Debug\WindowsFormsApp4.pdb
+C:\Users\rnas1\Desktop\CompilatorLab-main (1)\CompilatorLab-main — копия\bin\Debug\WindowsFormsApp4.exe.config
+C:\Users\rnas1\Desktop\CompilatorLab-main (1)\CompilatorLab-main — копия\bin\Debug\WindowsFormsApp4.exe
+C:\Users\rnas1\Desktop\CompilatorLab-main (1)\CompilatorLab-main — копия\bin\Debug\WindowsFormsApp4.pdb
+C:\Users\rnas1\Desktop\CompilatorLab-main (1)\CompilatorLab-main — копия\obj\Debug\Compilator.csproj.AssemblyReference.cache
+C:\Users\rnas1\Desktop\CompilatorLab-main (1)\CompilatorLab-main — копия\obj\Debug\Compilator.csproj.SuggestedBindingRedirects.cache
+C:\Users\rnas1\Desktop\CompilatorLab-main (1)\CompilatorLab-main — копия\obj\Debug\WindowsFormsApp4.Form1.resources
+C:\Users\rnas1\Desktop\CompilatorLab-main (1)\CompilatorLab-main — копия\obj\Debug\WindowsFormsApp4.Properties.Resources.resources
+C:\Users\rnas1\Desktop\CompilatorLab-main (1)\CompilatorLab-main — копия\obj\Debug\Compilator.csproj.GenerateResource.cache
+C:\Users\rnas1\Desktop\CompilatorLab-main (1)\CompilatorLab-main — копия\obj\Debug\Compilator.csproj.CoreCompileInputs.cache
+C:\Users\rnas1\Desktop\CompilatorLab-main (1)\CompilatorLab-main — копия\obj\Debug\WindowsFormsApp4.exe
+C:\Users\rnas1\Desktop\CompilatorLab-main (1)\CompilatorLab-main — копия\obj\Debug\WindowsFormsApp4.pdb
+C:\Users\rnas1\Desktop\CompilatorLab\bin\Debug\WindowsFormsApp4.exe.config
+C:\Users\rnas1\Desktop\CompilatorLab\bin\Debug\WindowsFormsApp4.exe
+C:\Users\rnas1\Desktop\CompilatorLab\bin\Debug\WindowsFormsApp4.pdb
+C:\Users\rnas1\Desktop\CompilatorLab\obj\Debug\Compilator.csproj.AssemblyReference.cache
+C:\Users\rnas1\Desktop\CompilatorLab\obj\Debug\Compilator.csproj.SuggestedBindingRedirects.cache
+C:\Users\rnas1\Desktop\CompilatorLab\obj\Debug\WindowsFormsApp4.Form1.resources
+C:\Users\rnas1\Desktop\CompilatorLab\obj\Debug\WindowsFormsApp4.Properties.Resources.resources
+C:\Users\rnas1\Desktop\CompilatorLab\obj\Debug\Compilator.csproj.GenerateResource.cache
+C:\Users\rnas1\Desktop\CompilatorLab\obj\Debug\Compilator.csproj.CoreCompileInputs.cache
+C:\Users\rnas1\Desktop\CompilatorLab\obj\Debug\WindowsFormsApp4.exe
+C:\Users\rnas1\Desktop\CompilatorLab\obj\Debug\WindowsFormsApp4.pdb
+C:\Users\rnas1\Desktop\CompilatorLab\obj\Debug\WindowsFormsApp4.g.resources
