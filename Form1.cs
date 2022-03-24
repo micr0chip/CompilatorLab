@@ -240,11 +240,10 @@ namespace WindowsFormsApp4
         private void StartToolStripButton_Click(object sender, EventArgs e)
         {
             ResultsWindow.Text = "";
-
             string[] str = CodeWindow.Text.Split(new char[] { '\n' });
             string[] TypeData = { "int", "boolean", "long", "short", "String", "true", "false", "double" };
             string[] MathSym = { "/", "(", ")", "-", "+", "*", "=" };
-            string[] NoName = { ":", "?", ".", ",", "{", "}", "[", "]", ";" };
+            string[] NoName = { ":", "?", "{", "}", "[", "]" };
             string[] Digits = { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
             bool Error;
             string sub;
@@ -259,16 +258,30 @@ namespace WindowsFormsApp4
                 str[i] = str[i].Replace(";\r", ";");
                 if (str[i].Contains(";") && str[i].Contains(" ;") == false)
                     str[i] = str[i].Replace(";", " ;");
-                for (int m = 0; m < MathSym.Length; m++)
+
+                for (int m = 0; m < NoName.Length; m++)
                 {
-                    repl = " " + MathSym[m] + " ";
-                    str[i] = str[i].Replace(MathSym[m], repl);
+                    repl = " ";
+                    str[i] = str[i].Replace(NoName[m], repl);
                 }
+
                 ResultsWindow.Text += " Строка " + i + "\r\n";
                 string[] words = str[i].Split(new char[] { ' ' });
 
                 for (int j = 0; j < words.Length; j++)
                 {
+                    for (int c = 0; c < NoName.Length; c++)
+                    {
+
+                    }
+
+                    if (sub.Contains(" "))
+                    {
+                        ResultsWindow.Text += " 10 - разделитель - c " + ((sub.IndexOf(" ", 0)) + step) + " по " + ((sub.IndexOf(" ", 0)) + step) + " символ " + "\r\n";
+                        step = step + (sub.IndexOf(" ", 0) + 1);
+                        sub = sub.Substring(sub.IndexOf(" ", space_way) + 1);
+                    }
+
                     if (TypeData.Contains(words[j]))
                     {
                         ResultsWindow.Text += " " + (Array.IndexOf(TypeData, words[j]) + 1) + " - ключевое слово - " + words[j] + " - с " + str[i].IndexOf((words[j]), way) + " по " + (str[i].IndexOf(words[j], way) + (words[j].Length - 1)) + " символ " + "\r\n";
@@ -276,13 +289,12 @@ namespace WindowsFormsApp4
 
                     else if (words[j].Contains('=') == true)
                     {
-                        ResultsWindow.Text += " 11 - оператор присваивания - " + words[j] + " - с " + (str[i].IndexOf((words[j]), way) - 1) + " по " + (str[i].IndexOf(words[j], way) - 1) + " символ " + "\r\n";
+                        ResultsWindow.Text += " 11 - оператор присваивания - " + words[j] + " - с " + (str[i].IndexOf((words[j]), way)) + " по " + (str[i].IndexOf(words[j], way)) + " символ " + "\r\n";
                     }
 
-                    else if (words[j][0] == '"')
+                    else if (words[j][0] == '"' && words[j][words[j].Length - 1] == '"')
                     {
-                        if (words[j][words[j].Length - 1] == '"')
-                            ResultsWindow.Text += " 12 - строка - " + words[j] + " - с " + ((str[i].IndexOf(words[j], way)) - 2) + " по " + ((str[i].IndexOf(words[j], way) + (words[j].Length - 1)) - 2) + " символ " + "\r\n";
+                        ResultsWindow.Text += " 12 - строка - " + words[j] + " - с " + ((str[i].IndexOf(words[j], way)) - 2) + " по " + ((str[i].IndexOf(words[j], way) + (words[j].Length - 1)) - 2) + " символ " + "\r\n";
                     }
 
                     else if (words[j].All(char.IsDigit))
@@ -329,24 +341,15 @@ namespace WindowsFormsApp4
                         {
                             ResultsWindow.Text += " 7 - идентификатор - " + words[j] + " - с " + (str[i].IndexOf((words[j]), way)) + " по " + ((str[i].IndexOf(words[j], way) + (words[j].Length - 1))) + " символ " + "\r\n";
                         }
-
                         else
                         {
                             ResultsWindow.Text += " Error недопустимый символ в названии переменной " + "\r\n";
                         }
-
-                        if (sub.Contains(" "))
-                        {
-                            ResultsWindow.Text += " 10 - разделитель - c " + ((sub.IndexOf(" ", 0)) + step) + " по " + ((sub.IndexOf(" ", 0)) + step) + " символ " + "\r\n";
-                            step = step + (sub.IndexOf(" ", 0) + 1);
-                            sub = sub.Substring(sub.IndexOf(" ", space_way) + 1);
-                        }
                     }
-                    way = way + System.Convert.ToInt32(words[j].Length);
+                    way = way + System.Convert.ToInt32(words[j].Length) + 1;
                 }
             }
         }
-
         private void HelpToolStripButton_Click(object sender, EventArgs e)
         {
             HelpToolStripMenuItem_Click(sender, e);
@@ -364,3 +367,8 @@ namespace WindowsFormsApp4
 
     }
 }
+
+
+
+
+
